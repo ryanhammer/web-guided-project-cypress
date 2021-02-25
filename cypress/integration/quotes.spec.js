@@ -40,7 +40,7 @@ describe('Quotes app', () => {
             textInput()
                 .should('have.value', '')
                 .type('Not import weird things in vs code')
-                .should('have.value', 'pizza')
+                .should('have.value', 'Not import weird things in vs code')
         })
     })
 })
