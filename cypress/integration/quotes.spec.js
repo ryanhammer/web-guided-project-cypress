@@ -15,4 +15,8 @@ describe('Quotes app', () => {
         expect({}).not.to.equal({})
         expect({}).to.eql({})
     })
+
+    it('the proper elements are on showing', () => {
+        
+    })
 })
