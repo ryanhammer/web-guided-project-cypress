@@ -8,6 +8,8 @@ describe('Quotes app', () => {
         cy.visit('http://localhost:1234')
     })
 
+    const textInput = () => cy.get('input[name=text]')
+
     it('sanity check to make sure our tests work', () => {
         expect(1 + 1).to.equal(2)
         expect(1 + 1).not.to.equal(3)
@@ -17,7 +19,7 @@ describe('Quotes app', () => {
     })
 
     it('the proper elements are on showing', () => {
-        cy.get('input[name=text]').should('exist')
+        textInput().should('exist')
         cy.get('input[name=author]').should('exist')
         cy.get('input[name=pizza]').should('not.exist')
         cy.get("button[id=submitBtn]").should("exist");
