@@ -9,6 +9,7 @@ describe('Quotes app', () => {
     })
 
     it('sanity check to make sure our tests work', () => {
-        expect(1 + 1).to.equal(2)
+        expect(1 + 1).to.equal(3)
+        expect(7).to.equal(7)
     })
 })
