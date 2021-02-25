@@ -12,6 +12,7 @@ describe('Quotes app', () => {
         expect(1 + 1).to.equal(2)
         expect(1 + 1).not.to.equal(3)
         expect(7).to.equal(7)
-        expect({}).to.equal({})
+        expect({}).not.to.equal({})
+        expect({}).to.eql({})
     })
 })
