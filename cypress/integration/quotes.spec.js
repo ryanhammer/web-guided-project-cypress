@@ -8,4 +8,7 @@ describe('Quotes app', () => {
         cy.visit('http://localhost:1234')
     })
 
+    it('sanity check to make sure our tests work', () => {
+        expect(1 + 1).to.equal(2)
+    })
 })
