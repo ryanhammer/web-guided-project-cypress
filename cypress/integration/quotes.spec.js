@@ -10,7 +10,10 @@ describe('Quotes app', () => {
 
     // Helps to centeralize our CSS selectors and clean up the tests a bit and keep the DRY
     const textInput = () => cy.get('input[name=text]')
-
+    const authorInput = () => cy.get('input[name=author]')
+    const pizzaInput = () => cy.get('input[name=pizza]')
+    const submitButton = () => cy.get("button[id=submitBtn]")
+    const cancelButton = () => cy.get('#cancelBtn')
     it('sanity check to make sure our tests work', () => {
         expect(1 + 1).to.equal(2)
         expect(1 + 1).not.to.equal(3)
@@ -21,9 +24,9 @@ describe('Quotes app', () => {
 
     it('the proper elements are on showing', () => {
         textInput().should('exist')
-        cy.get('input[name=author]').should('exist')
-        cy.get('input[name=pizza]').should('not.exist')
-        cy.get("button[id=submitBtn]").should("exist");
-        cy.get('#cancelBtn').should("exist");
+        authorInput().should('exist')
+        pizzaInput().should('not.exist')
+        submitButton().should("exist");
+        cancelButton().should("exist");
     })
 })
