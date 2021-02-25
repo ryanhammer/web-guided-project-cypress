@@ -37,7 +37,7 @@ describe('Quotes app', () => {
         })
 
         it('can type in inputs', () => {
-            textInput().should('have.value', '')
+            textInput().should('be.empty')
         })
     })
 })
