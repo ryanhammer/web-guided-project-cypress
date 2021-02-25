@@ -14,6 +14,7 @@ describe('Quotes app', () => {
     const pizzaInput = () => cy.get('input[name=pizza]')
     const submitButton = () => cy.get("button[id=submitBtn]")
     const cancelButton = () => cy.get('#cancelBtn')
+    
     it('sanity check to make sure our tests work', () => {
         expect(1 + 1).to.equal(2)
         expect(1 + 1).not.to.equal(3)
