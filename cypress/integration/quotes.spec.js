@@ -1,5 +1,3 @@
-const { text } = require("express")
-
 // write tests here
 describe('Quotes app', () => {
     // Each test needs clean state
@@ -38,8 +36,8 @@ describe('Quotes app', () => {
             submitButton().should('be.disabled')
         })
 
-        // it('can type in inputs', () => {
-        //     textInput().should('have.value', '')
-        // })
+        it('can type in inputs', () => {
+            textInput().should('have.value', '')
+        })
     })
 })
