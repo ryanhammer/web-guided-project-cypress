@@ -57,6 +57,17 @@ describe('Quotes app', () => {
             // check text
             // check author
             // check submit
+            textInput()
+                .type('typing in text input')
+            authorInput()
+                .type('typing in author input')
+            cancelButton()
+                .click()
+            textInput()
+                .should('have.value', '')
+            authorInput()
+                .should('have.value', '')
+            submitButton().should('be.disabled')
         })
         
 
