@@ -38,8 +38,8 @@ describe('Quotes app', () => {
             submitButton().should('be.disabled')
         })
 
-        it('can type in inputs', () => {
-            textInput().should('have.value', '')
-        })
+        // it('can type in inputs', () => {
+        //     textInput().should('have.value', '')
+        // })
     })
 })
