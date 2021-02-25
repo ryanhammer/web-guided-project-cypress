@@ -70,6 +70,10 @@ describe('Quotes app', () => {
             submitButton().should('be.disabled')
         })
         
+        it('can submit and delete a new quote', () => {
+            cy.contains('Pizza is the best!!').should('exist')
+
+        })
 
 
 
