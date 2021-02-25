@@ -79,6 +79,15 @@ describe('Quotes app', () => {
             cy.contains('Pizza is the best!!').next().next().click()
         })
 
+        it('variation of can submit a new quote', () => {
+            cy.contains(/have fun/).should('not.exist')
+            textInput().type('have fun')
+            authorInput().type('Andy')
+            submitButton().click()
+            cy.contains(/have fun/).should('exist')
+            cy.contains(/have fun/).next().next().click()
+            cy.contains(/have fun/).should('not.exist')
+          })
 
 
     })
