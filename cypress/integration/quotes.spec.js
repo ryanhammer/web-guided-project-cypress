@@ -37,7 +37,9 @@ describe('Quotes app', () => {
         })
 
         it('can type in inputs', () => {
-            textInput().should('be.empty')
+            textInput()
+                .should('have.value', '')
+                .type('Not import weird things in vs code')
         })
     })
 })
