@@ -8,6 +8,7 @@ describe('Quotes app', () => {
         cy.visit('http://localhost:1234')
     })
 
+    // Helps to centeralize our CSS selectors and clean up the tests a bit and keep the DRY
     const textInput = () => cy.get('input[name=text]')
 
     it('sanity check to make sure our tests work', () => {
