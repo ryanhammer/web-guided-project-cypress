@@ -1,3 +1,5 @@
+const { text } = require("express")
+
 // write tests here
 describe('Quotes app', () => {
     // Each test needs clean state
@@ -72,7 +74,8 @@ describe('Quotes app', () => {
         
         it.only('can submit and delete a new quote', () => {
             cy.contains('Pizza is the best!!').should('not.exist')
-
+            textInput().type('Pizza is the best!!')
+            authorInput().type('Tony Stark')
         })
 
 
