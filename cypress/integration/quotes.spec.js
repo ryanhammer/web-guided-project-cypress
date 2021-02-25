@@ -36,7 +36,7 @@ describe('Quotes app', () => {
             submitButton().should('be.disabled')
         })
 
-        it('can type in inputs', () => {
+        it('can type in inputs and submit button is enabled', () => {
             textInput()
                 .should('have.value', '')
                 .type('Not import weird things in vs code')
@@ -46,8 +46,12 @@ describe('Quotes app', () => {
                 .should('have.value', '')
                 .type('Tony Stark')
                 .should('have.value', 'Tony Stark')
+            
+            submitButton().should('not.be.disabled')
         })
         
+
+
 
     })
 })
