@@ -17,6 +17,6 @@ describe('Quotes app', () => {
     })
 
     it('the proper elements are on showing', () => {
-        
+        cy.get('input[name=text]')
     })
 })
