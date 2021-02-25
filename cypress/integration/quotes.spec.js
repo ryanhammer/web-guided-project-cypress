@@ -75,7 +75,7 @@ describe('Quotes app', () => {
             textInput().type('Pizza is the best!!')
             authorInput().type('Tony Stark')
             submitButton().click()
-            cy.contains('Pizza is the best!!')
+            cy.contains('Pizza is the best!!').siblings('button:nth-of-type(2)').click()
         })
 
 
