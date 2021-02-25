@@ -41,15 +41,12 @@ describe('Quotes app', () => {
                 .should('have.value', '')
                 .type('Not import weird things in vs code')
                 .should('have.value', 'Not import weird things in vs code')
-        })
-
-        it('can type in author input', () => {
+                
             authorInput()
                 .should('have.value', '')
                 .type('Tony Stark')
                 .should('have.value', 'Tony Stark')
         })
-
         
 
     })
